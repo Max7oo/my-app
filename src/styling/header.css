@@ -1,0 +1,32 @@
+header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header-intro {
+    margin-top: var(--margin-big);
+}
+
+.header-profile {
+    margin-top: var(--margin-big);
+}
+
+.header-profile-image {
+    max-width: max(100%, 80%);
+}
+
+@media (max-width: 1600px) {
+    .header-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 50em) {
+    header {
+        display: block;
+    }
+}
+  
+@media (max-width: 37em) {
+}

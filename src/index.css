@@ -1,13 +1,225 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'CabinetGrotesk-Regular';
+  src: url('./fonts/CabinetGrotesk-Regular.woff') format('woff');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Medium';
+  src: url('./fonts/CabinetGrotesk-Medium.woff') format('woff');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./fonts/Montserrat-Medium.woff') format('woff');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+/* Colors */
+
+:root {
+  --bg: #333333;
+  --cta: #33C2F2;
+  --t: #ffffff; 
+  --st: #A5A5A5;
+
+  --margin-big: 100px;
+  --margin-small: 25px;
+  --margin-mini: 10px;
+}
+
+/* Background */
+
+.bg {
+  position: fixed;
+  z-index: -1000;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('./media/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,0) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,0) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+}
+
+/* Elements */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  max-width: min(1600px, 80%);
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system, 'CabinetGrotesk-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  margin: 0;
+  padding-left: var(--margin-small);
+}
+
+.mobile-hidden {
+  display: block;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+.breadcrum-items {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin: var(--margin-big) 0 var(--margin-big) 0;
+}
+
+.breadcrum-item {
+  display: flex;
+}
+
+.breadcrum-item p {
+  margin-right: var(--margin-mini);
+}
+
+.breadcrum-item-arrow {
+  display: flex;
+  width: 20px;
+}
+
+
+/* Text */
+
+h1 {
+  font-family: -apple-system, 'CabinetGrotesk-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: min(8vw, 100px);
+  color: var(--t);
+  margin: 0;
+}
+
+h2 {
+  font-family: -apple-system, 'CabinetGrotesk-Regular', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: min(6vw, 75px);
+  color: var(--st);
+  margin: 0;
+}
+
+h3 {
+  font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: var(--cta);
+  margin: 0;
+}
+
+p {
+  font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: var(--t);
+  margin: 0;
+}
+
+a {
+  font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: var(--t);
+  text-decoration: none;
+}
+
+button {
+  font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: var(--t);
+  /* text-decoration: underline; */
+}
+
+li {
+  font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: var(--t);
+  list-style: none;
+  text-decoration: none;
+  color: var(--t);
+}
+
+@media (max-width: 50em) {
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    font-size: 16px;
+  }
+  
+  button {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  :root {
+    --margin-big: 40px;
+  }
+}
+
+@media (max-width: 37em) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: block;;
+  }
 }
