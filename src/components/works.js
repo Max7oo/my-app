@@ -1,12 +1,12 @@
 import '../styling/works.css'
-import '../functions/hover-image.js';
+import '../functions/functions.js';
 
 import arrow from '../media/arrow.svg';
 import maatje from '../media/maatje.svg';
 
 function Works() {
     return (
-        <section>
+        <section id='work'>
             <div className='breadcrum-items'>
                 <a href='#work' className='breadcrum-item'>
                     <p>SELECTED WORKS</p>
@@ -14,7 +14,7 @@ function Works() {
                 </a>
             </div>
             
-            <div id='work' className='work'>
+            <div className='work'>
                 <div className='work-thumbnail hover-hidden'>
                     <img src={maatje} className='work-thumbnail-image' alt='zorgrobot maatje'/>
                 </div>

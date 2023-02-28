@@ -1,4 +1,8 @@
+import maatje from '../media/maatje.svg';
+import delivar from '../media/delivar.png';
+
 window.onload=function(){    
+
     const mobileNav = document.querySelector('.nav');
     const navToggle = document.querySelector('.nav-toggle-mobile');
 
@@ -15,5 +19,17 @@ window.onload=function(){
             navToggle.setAttribute('aria-expanded', false);
             navToggle.innerText = 'MENU';
         }
+    });
+
+    const workThumbnail = document.querySelector('.work-thumbnail-image');
+    const itemOne = document.querySelector('.work-item-1');
+    const itemTwo = document.querySelector('.work-item-2');
+
+    itemOne.addEventListener('mouseover', (e) => {
+        workThumbnail.setAttribute('src', maatje);
+    });
+
+    itemTwo.addEventListener('mouseover', (e) => {
+        workThumbnail.setAttribute('src', delivar);
     });
 };

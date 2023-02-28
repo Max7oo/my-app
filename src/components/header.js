@@ -1,18 +1,16 @@
 import '../styling/header.css'
-import logo from '../media/logo.jpg';
+import profile from '../media/profile.jpg';
 
 function Header() {
     return (
-        <header>
+        <header id='header'>
             <div className='header-intro'>
-                <div className='header-hidden'>
-                   <h2>I am Max de Ruiter</h2> 
-                </div>
+                <h2 className='header-hidden'>I am Max de Ruiter</h2> 
                 <h1>HUMAN-CENTRED DESIGNER</h1>
                 <h3>Available for work</h3>
             </div>
             <div className='header-profile'>
-                <img src={logo} className='header-profile-image' alt='logo' />
+                <img src={profile} className='header-profile-image' alt='profile' />
             </div>    
         </header>
     );

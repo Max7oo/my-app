@@ -4,8 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Nav from './components/nav';
-import Header from './components/header'
-import Works from './components/works'
+import Header from './components/header';
+import Works from './components/works';
+import About from './components/about';
+import Contact from './components/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +16,8 @@ root.render(
         <Nav />
         <Header />
         <Works />
+        <About />
+        <Contact />
       </React.StrictMode>
 );
 

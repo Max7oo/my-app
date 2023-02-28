@@ -78,12 +78,10 @@
   .nav-toggle-mobile {
     display: block;
     position: relative;
+    padding: 0;
     background: none;
     border: 0;
     z-index: 9999;
     width: auto;
-    /* aspect-ratio: 1; */
-    /* top: 1rem;
-    right: 1rem; */
   }
 }
