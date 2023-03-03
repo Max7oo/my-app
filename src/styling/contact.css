@@ -15,7 +15,7 @@
     transform: rotate(-90deg);
 }
 
-.contact-arrow {
+.contact-arrow-1, .contact-arrow-2, .contact-arrow-3, .contact-arrow-4 {
         display: flex;
         width: 20px;
     
@@ -28,12 +28,30 @@
         transition: 350ms ease-out;
 }
 
-.contact:hover .contact-arrow { 
-    margin-top: calc(var(--margin-small) * -2);
-    margin-right: calc(var(--margin-small) * -1);
+.contact-arrow:hover .contact-arrow-1 { 
+    margin-top: calc(var(--margin-small) * -1);
+    margin-right: calc(var(--margin-small) * -0.5);
 
     transition: 350ms ease-out;
-  }
+}
+.contact-arrow:hover .contact-arrow-2 { 
+    margin-top: calc(var(--margin-small) * -1);
+    margin-right: calc(var(--margin-small) * -0.5);
+
+    transition: 350ms ease-out;
+}
+.contact-arrow:hover .contact-arrow-3 { 
+    margin-top: calc(var(--margin-small) * -1);
+    margin-right: calc(var(--margin-small) * -0.5);
+
+    transition: 350ms ease-out;
+}
+.contact-arrow:hover .contact-arrow-4 { 
+    margin-top: calc(var(--margin-small) * -1);
+    margin-right: calc(var(--margin-small) * -0.5);
+
+    transition: 350ms ease-out;
+}
 
 .contact-last {
     border-bottom: solid 3px var(--t);

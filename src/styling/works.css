@@ -33,6 +33,24 @@
     border-top: 3px solid var(--t);
 }
 
+.work-item-1:hover h2 {
+    color: var(--cta);
+
+    transition: 350ms ease-out;
+}
+
+.work-item-2:hover h2 {
+    color: var(--cta);
+
+    transition: 350ms ease-out;
+}
+
+.work-item-3:hover h2 {
+    color: var(--cta);
+
+    transition: 350ms ease-out;
+}
+
 .work-item-image {
     width: 100%;
 }

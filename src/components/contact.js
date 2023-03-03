@@ -14,10 +14,10 @@ function Contact() {
             </div>
 
             <div className='contact'>
-                <a href={cv} download='CV Max de Ruiter'><span><h6>Resume.pdf</h6><img src={arrow} className='contact-arrow' alt='arrow up'/></span></a>
-                <a href='mailto:m.j.deruiter99@hotmail.com'><span><h6>Mail me</h6><img src={arrow} className='contact-arrow' alt='arrow up'/></span></a>
-                <a href='https://www.instagram.com/maxoo.nl/'><span><h6>Instagram</h6><img src={arrow} className='contact-arrow' alt='arrow up'/></span></a>
-                <a href='https://www.linkedin.com/in/max-de-ruiter-2a8871181/'><span className='contact-last'><h6>LinkedIn</h6><img src={arrow} className='contact-arrow' alt='arrow up'/></span></a>
+                <a href={cv} download='CV Max de Ruiter' className='contact-arrow'><span><h6>Resume.pdf</h6><img src={arrow} className='contact-arrow-1' alt='arrow up'/></span></a>
+                <a href='mailto:m.j.deruiter99@hotmail.com' className='contact-arrow'><span><h6>Mail me</h6><img src={arrow} className='contact-arrow-2' alt='arrow up'/></span></a>
+                <a href='https://www.instagram.com/maxoo.nl/' className='contact-arrow'><span><h6>Instagram</h6><img src={arrow} className='contact-arrow-3' alt='arrow up'/></span></a>
+                <a href='https://www.linkedin.com/in/max-de-ruiter-2a8871181/' className='contact-arrow'><span className='contact-last'><h6>LinkedIn</h6><img src={arrow} className='contact-arrow-4' alt='arrow up'/></span></a>
             </div>
 
             <div className='contact-back-to-top-items'>
