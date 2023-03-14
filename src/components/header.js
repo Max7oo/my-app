@@ -1,5 +1,5 @@
 import '../styling/header.css'
-import profile from '../media/profile.jpg';
+import profile from '../media/max-laptop.jpg';
 
 function Header() {
     return (

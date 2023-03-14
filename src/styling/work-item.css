@@ -1,0 +1,256 @@
+.work-intro {
+    padding-right: var(--margin-small);
+}
+
+.work-intro-visual-img {
+    min-width: 500px;
+    max-width: 100%;
+}
+
+.work-intro-tags {
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.work-intro-tags span {
+    line-height: 30px;
+    border: solid 3px var(--t);
+
+    padding: var(--margin-mini);
+    margin: calc(var(--margin-small)/2) var(--margin-small) calc(var(--margin-small)/2) 0;
+}
+
+.work-intro-tags-mobile {
+    display: none;
+}
+
+.work-project {
+    display: flex;
+    width: 100%;
+}
+
+.work-project-info {
+    flex: 1;
+    margin-right: calc(var(--margin-small)/2);
+}
+
+.work-project-info h5 {
+    margin-top: var(--margin-small);
+}
+
+.work-project-info h5:first-child {
+    margin-top: 0;
+}
+
+.work-project-img {
+    flex: 1;
+    margin-top: var(--margin-small);
+    margin-left: calc(var(--margin-small)/2);
+    margin-right: calc(var(--margin-small)/2);
+}
+
+.work-project-context {
+    flex: 1;
+    margin-left: calc(var(--margin-small)/2);
+}
+
+.work-project-context p:last-child{
+    padding-top: var(--margin-mini);
+}
+
+.work-product {
+    display: grid;
+    grid-template-rows: auto;
+
+    column-gap: var(--margin-small);
+    row-gap: var(--margin-small);
+
+    grid-template-areas:
+    "header header header header"
+    "product1 product1 . ."
+    "product1 product1 product2 product2"
+    "product3 product3 product2 product2"
+    "product3 product3 . .";
+}
+
+.work-product-intro {
+    grid-area: header;
+}
+
+.work-product-presentation {
+    grid-area: product1;
+}
+
+.work-product-tutorial {
+    grid-area: product2;
+}
+
+.work-product-questionlist {
+    grid-area: product3;
+}
+
+.work-product-presentation p, .work-product-tutorial p, .work-product-questionlist p {
+    padding-top: var(--margin-mini);
+}
+
+.work-product-img {
+    width: 100%;
+    margin-top: var(--margin-mini)
+}
+
+.work-impact {
+    display: flex;
+    width: 100%;
+}
+
+.work-impact-impact {
+    flex: 1;
+    margin-right: calc(var(--margin-small)/2);
+}
+
+.work-impact-impact-table {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.work-impact-impact table {
+    width: 500px;
+    text-align: left;
+    margin-top: var(--margin-mini);
+
+    font-family: -apple-system, 'Montserrat-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: var(--t);
+}
+
+.work-impact-impact .red {
+    color: red;
+}
+
+.work-impact-impact .green {
+    color: green;
+}
+
+.work-impact-impact-arrow {
+    width: 20px;
+    margin-left: calc(var(--margin-mini)/2);
+
+    -webkit-transform:rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.work-impact-learnings {
+    flex: 1;
+    margin-left: calc(var(--margin-small)/2);
+}
+
+.work-impact-learnings p:first-of-type {
+    padding-top: 0;
+}
+
+.work-impact-learnings p {
+    padding-top: var(--margin-mini)
+}
+
+@media (max-width: 1815px) {
+    .work-project-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .work-impact-impact table {
+        width: 100%;
+    }
+
+    .work-intro-visual-img {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 50em) {
+    .work-intro {
+        padding-right: 0;
+    }
+
+    .work-intro-tags {
+        display: none;
+    }
+
+    .work-intro-visual {
+        margin-top: var(--margin-small);
+    }
+    
+    .work-intro-visual-img {
+        min-width: 100%;
+    }
+
+    .work-intro-tags-mobile {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: var(--margin-small);
+    }
+
+    .work-intro-tags-mobile span {
+        line-height: 30px;
+        border: solid 3px var(--t);
+    
+        padding: var(--margin-mini);
+        margin: calc(var(--margin-mini)/2) var(--margin-mini) calc(var(--margin-mini)/2) 0;
+    }
+
+    .work-project {
+        display: block;
+    }
+
+    .work-project-info {
+        margin: 0;
+    }
+
+    .work-project-img {
+        display: none;
+    }
+
+    .work-project-context {
+        margin: var(--margin-small) 0 0 0;
+    }
+
+    .work-product {
+        grid-template-areas:
+        "header header header header"
+        "product1 product1 product1 product1"
+        "product2 product2 product2 product2"
+        "product3 product3 product3 product3";
+    }
+
+    .work-impact {
+        display: block;
+    }
+
+    .work-impact-impact {
+        margin-right: 0;
+    }
+    
+    .work-impact-impact table {
+        font-size: 16px;
+    }
+
+    .work-impact-learnings {
+        margin-top: var(--margin-small);
+        margin-left: 0;
+    }
+}
+  
+@media (max-width: 37em) {
+    .work-intro-tags {
+        margin-top: var(--margin-small);
+    }
+
+    .work-intro-tags span {
+        margin: calc(var(--margin-mini)/2) var(--margin-mini) calc(var(--margin-mini)/2) 0;
+    }
+}

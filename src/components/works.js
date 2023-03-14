@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import '../styling/works.css'
 import '../functions/functions.js';
 
@@ -20,7 +22,7 @@ function Works() {
                 </div>
                 
                 <div className='work-items'>
-                    <a href='/maatje'>
+                    <Link to="/maatje">
                         <div className='work-item-1'>
                             <div className='work-item-image desktop-hidden'>
                                 <img src={maatje} className='work-item-image' alt='zorgrobot maatje'/>
@@ -39,7 +41,7 @@ function Works() {
                                 <img src={arrow} className='work-item-tags-arrow' alt='arrow down'/>
                             </div>
                         </div>
-                    </a>
+                    </Link>
 
                     <a href='/'>
                         <div className='work-item-2'>

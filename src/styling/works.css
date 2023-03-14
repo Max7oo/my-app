@@ -109,4 +109,16 @@
     .work-item-tags-arrow {
         width: 20px
     }
+
+    .work-item-1:hover .work-item-tags-arrow { 
+        margin-right: calc(var(--margin-mini) * -1);
+    }
+
+    .work-item-2:hover .work-item-tags-arrow { 
+        margin-right: calc(var(--margin-mini) * -1);
+    }
+
+    .work-item-3:hover .work-item-tags-arrow { 
+        margin-right: calc(var(--margin-mini) * -1);
+    }
 }

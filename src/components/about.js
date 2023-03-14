@@ -23,8 +23,8 @@ function About() {
             <div id='about' className='about'>
                 <div className='about-me'>
                     <h4>Hi, I am Max</h4>
-                    <p>MSc student researching, designing and developing digital products, all the while checking that the project is viable on a business- and marketing level.</p>
-                    <p>My favorite part in this process is the human connection with the stakeholders and target audience, making sure their needs are identified using Layman's terms and are translated into a technical design with which developers can work.</p>
+                    <p>Recently graduated from the MSc Digital Technologies, where I continued to learn about developing digital technologies, specializing in behaviour science, while also learning about the development of sustainable business models, leadership, responsibility, communication and ethics.</p>
+                    <p>My favourite part in developing is the human connection with the stakeholders and target audience, making sure their needs are identified using Layman's terms and are translated into a technical design with which developers can work.</p>
                     <p>As an interactive developer by heart, I take on the role as front-end developer during the development fase of the project.</p>
                 </div>
 

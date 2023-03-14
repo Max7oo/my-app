@@ -4,7 +4,7 @@ import '../functions/functions.js';
 
 function Nav() {
   return (
-    <section id='nav'>
+    <section id='top'>
       <div className='nav-bar'>
         <a href="/" rel='noreferrer'>
           MAX DE RUITER
@@ -15,12 +15,12 @@ function Nav() {
         <nav>
           <ul id='nav' data-visible='false' className='nav'>
             <li className='active'>
-              <a href="index.html">
+              <a href="#work">
                 WORK
               </a>
             </li>
             <li className='active'>
-              <a href="index.html">
+              <a href="#about">
                 ABOUT ME
               </a>
             </li>
